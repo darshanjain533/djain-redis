@@ -41,9 +41,11 @@ public class EmpController {
 	}
 	
 	@GetMapping("/employee/get/{id}")
-	public Optional<Employee> getEmployeebyId(@PathVariable("id") Integer id){
+	public Employee getEmployeebyId(@PathVariable("id") Integer id){
 		log.info("inside get employeesbyid");
-		return eserv.getEmployeesbyid(id);
+		Employee e = eserv.getEmployeesbyid(id).get();
+		log.info("employee is:::"+e);
+		return eserv.getEmployeesbyid(id).get();
 	}
 	
 	@PutMapping("/employee/update/{empname}")

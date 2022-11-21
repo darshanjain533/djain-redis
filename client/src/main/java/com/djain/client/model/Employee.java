@@ -1,11 +1,11 @@
 package com.djain.client.model;
 
-import java.io.Serializable;
 import lombok.Data;
 
 
 @Data
 public class Employee {
+	Integer eid;
 	String ename;
 	String edays;
 	String ephone;

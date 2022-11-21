@@ -27,7 +27,7 @@ public class ClientService {
 	}
 
 	public Employee getdetails(Integer emp) {
-		return restTemplate.getForObject("http://localhost:8080/employee/get", Employee.class);
+		return restTemplate.getForEntity("http://localhost:8080/employee/get/"+emp, Employee.class).getBody();
 		
 	}
 	

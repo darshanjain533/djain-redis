@@ -9,11 +9,5 @@ public class Employee {
 	String ename;
 	String edays;
 	String ephone;
-	
-	public Employee(String ename, String edays, String ephone) {
-		this.ename = ename;
-		this.edays = edays;
-		this.ephone = ephone;
-	}
-	
+
 }
